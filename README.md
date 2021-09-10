@@ -1,3 +1,19 @@
+<div align="center">
+<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
+</div>
+
+# Pomodoro Tracker
+
+Cuando tu energía se concentra en una sola cosa, te vuelves más poderoso. Pomodoro es un método que permite mejorar la administración del tiempo dedicado a una actividad. Desarrolla tu propia versión de Pomodoro dándole un diseño único y diferenciador.
+
+## Desktop
+
+<img width="400px"  src="https://raw.githubusercontent.com/uxcristopher/imagenes/main/Readmes/Pomodoro%20tracker/Desktop-pomodoro.jpg" />
+
+## Mobile
+
+<img width="400px"  src="https://raw.githubusercontent.com/uxcristopher/imagenes/main/Readmes/Pomodoro%20tracker/Mobile-pomodoro.jpg" />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

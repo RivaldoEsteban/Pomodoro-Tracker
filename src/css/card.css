@@ -1,0 +1,70 @@
+.card-container {
+  background: var(--black);
+  box-shadow: -4px -4px 16px 0px rgba(73, 73, 73, 0.4);
+  block-size: 32.5rem;
+  inline-size: 21.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+
+.card-content {
+  block-size: 100%;
+  inline-size: 100%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font: var(--title);
+  margin: 0;
+}
+
+.countdown-container {
+  background: rgba(224, 70, 215, 0.2);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.countdown-content {
+  padding: 74px 30px;
+  background: var(--black);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.countdown {
+  font: 400 normal 65px/76px "Roboto";
+  color: var(--pink);
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--button);
+  color: var(--white);
+  font: var(--button);
+  box-shadow: -4px -4px 16px 0px rgba(73, 73, 73, 0.4);
+  /* box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.24); */
+}
+
+.pause-countdown {
+  color: var(--red);
+}
+
+.disabled {
+  opacity: 0.2;
+  cursor: no-drop;
+}
+
+.active {
+  opacity: 1;
+}

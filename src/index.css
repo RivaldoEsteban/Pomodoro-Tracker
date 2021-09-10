@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "animate.css";
+
+:root {
+  --black: #141c27;
+  --radial: linear-gradient(56deg, #172030 0%, #292b2e 100%);
+  --stroke: #272829;
+  --pink: #e046d7;
+  --green: #3ab499;
+  --bg: #172030;
+  --white: #ffffff;
+  --red: #f94409;
+  --button: #172030;
+  --button: 500 1rem/1rem "Roboto", sans-serif;
+  --title: 700 1.5rem / normal "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: var(--white);
+  background-color: var(--black);
+  block-size: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/53047hd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
 }
