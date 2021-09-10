@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Pomodoro-Tracker/static/css/main.31829eac.chunk.css",
+    "main.js": "/Pomodoro-Tracker/static/js/main.8a82c37f.chunk.js",
+    "main.js.map": "/Pomodoro-Tracker/static/js/main.8a82c37f.chunk.js.map",
+    "runtime-main.js": "/Pomodoro-Tracker/static/js/runtime-main.00a15d0a.js",
+    "runtime-main.js.map": "/Pomodoro-Tracker/static/js/runtime-main.00a15d0a.js.map",
+    "static/css/2.a1596f27.chunk.css": "/Pomodoro-Tracker/static/css/2.a1596f27.chunk.css",
+    "static/js/2.8b82a9a5.chunk.js": "/Pomodoro-Tracker/static/js/2.8b82a9a5.chunk.js",
+    "static/js/2.8b82a9a5.chunk.js.map": "/Pomodoro-Tracker/static/js/2.8b82a9a5.chunk.js.map",
+    "static/js/3.f7b32c76.chunk.js": "/Pomodoro-Tracker/static/js/3.f7b32c76.chunk.js",
+    "static/js/3.f7b32c76.chunk.js.map": "/Pomodoro-Tracker/static/js/3.f7b32c76.chunk.js.map",
+    "index.html": "/Pomodoro-Tracker/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/Pomodoro-Tracker/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.31829eac.chunk.css.map": "/Pomodoro-Tracker/static/css/main.31829eac.chunk.css.map",
+    "static/js/2.8b82a9a5.chunk.js.LICENSE.txt": "/Pomodoro-Tracker/static/js/2.8b82a9a5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00a15d0a.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.8b82a9a5.chunk.js",
+    "static/css/main.31829eac.chunk.css",
+    "static/js/main.8a82c37f.chunk.js"
+  ]
+}
