@@ -13,7 +13,7 @@ function Card() {
 
   //tiempo de la cuenta regresiva
   const [timePomodoro, setTimePomodoro] = useState(1500);
-  const [timeBreak, setTimeBreak] = useState(20);
+  const [timeBreak, setTimeBreak] = useState(10);
   const [pomodoroActive, setPomodoroActive] = useState(true);
   const [time, setTime] = useState(true);
   //color del cronómetro
@@ -26,15 +26,6 @@ function Card() {
   const intervalo = useRef(null);
   const breakInterval = useRef(null);
 
-  if (timePomodoro === 0) {
-    clearInterval(intervalo.current);
-    // handleStartBreak();
-  }
-  if (timeBreak === 0) {
-    clearInterval(breakInterval.current);
-    // handleStartCountdown();
-  }
-
   function handleStartCountdown() {
     clearInterval(breakInterval.current);
     setTime(true);
@@ -42,7 +33,7 @@ function Card() {
     setButtonActive(true); //estilo activo al boton de pause/play
     setControls(true); //cambiando el label del boton a pause
 
-    // setTimePomodoro(1500);
+    setTimePomodoro(1500);
     setColor("var(--pink)");
     intervalo.current = setInterval(() => {
       setTimePomodoro((prevState) => prevState - 1);
@@ -56,7 +47,7 @@ function Card() {
     setButtonActive(true); //estilo activo al boton de pause/play
     setControls(true); //cambiando el label del boton a pause
 
-    // setTimeBreak(20);
+    setTimeBreak(5);
     setColor("var(--green)");
     breakInterval.current = setInterval(() => {
       setTimeBreak((prevState) => prevState - 1);
@@ -72,11 +63,24 @@ function Card() {
     } else {
       setControls(true);
       if (pomodoroActive) {
-        handleStartBreak();
+        setColor("var(--green)");
+        breakInterval.current = setInterval(() => {
+          setTimeBreak((prevState) => prevState - 1);
+        }, 1000);
       } else {
-        handleStartCountdown();
+        setColor("var(--pink)");
+        intervalo.current = setInterval(() => {
+          setTimePomodoro((prevState) => prevState - 1);
+        }, 1000);
       }
     }
+  }
+
+  if (timePomodoro === 0) {
+    clearInterval(intervalo.current);
+  }
+  if (timeBreak === 0) {
+    clearInterval(breakInterval.current);
   }
 
   return (
