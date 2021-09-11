@@ -1,8 +1,10 @@
 import React from 'react';
 import Card from './components/card'
-function App() {
+// import Type from './type';
+function App():JSX.Element {
   return (
     <>
+      {/* <Type/> */}
       <Card/>
     </>
   );
