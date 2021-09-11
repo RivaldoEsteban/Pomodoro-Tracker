@@ -9,24 +9,24 @@ import Buttonbreak from "./buttonBreak";
 
 function Card() :JSX.Element {
   ///false = play , true = pause
-  const [controls, setControls] = useState(false);
+  const [controls, setControls] = useState<boolean>(false);
 
   //tiempo de la cuenta regresiva
-  const [timePomodoro, setTimePomodoro] = useState(1500);
-  const [timeBreak, setTimeBreak] = useState(300);
-  const [pomodoroActive, setPomodoroActive] = useState(true);
-  const [time, setTime] = useState(true);
+  const [timePomodoro, setTimePomodoro] = useState<number>(1500);
+  const [timeBreak, setTimeBreak] = useState<number>(300);
+  const [pomodoroActive, setPomodoroActive] = useState<boolean>(true);
+  const [time, setTime] = useState<boolean>(true);
   //color del cronómetro
-  const [color, setColor] = useState("var(--pink)");
+  const [color, setColor] = useState<string>("var(--pink)");
 
   //button2
   const [buttonRef, setButtonRef] = useState<any>();
-  const [buttonActive, setButtonActive] = useState(false);
+  const [buttonActive, setButtonActive] = useState<boolean>(false);
 
   const intervalo = useRef<NodeJS.Timeout>();
   const breakInterval = useRef<NodeJS.Timeout>();
 
-  function handleStartCountdown() {
+  function handleStartCountdown():void {
     breakInterval?.current && clearInterval(breakInterval.current);
     setTime(true);
     setPomodoroActive(false);
@@ -40,7 +40,7 @@ function Card() :JSX.Element {
     }, 1000);
   }
 
-  function handleStartBreak() {
+  function handleStartBreak():void{
     intervalo?.current && clearInterval(intervalo.current);
     setTime(false);
     setPomodoroActive(true);
@@ -54,7 +54,7 @@ function Card() :JSX.Element {
     }, 1000);
   }
 
-  function coundownState() {
+  function coundownState() :void{
     const labelButton:string = buttonRef.textContent.toLowerCase();
     if (labelButton.includes("pause")) {
       setControls(false);
